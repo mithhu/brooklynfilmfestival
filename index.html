@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brooklyn Outdoor Film Festival</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <a href="#myHome" class="navbar-brand"><img src="img/logo1.png" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#myHome">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myAbout">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myNews">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#movieList">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactUs">Contact Us</a>
+                </li>
+            </ul> 
+        </div>
+    </nav>    
+    
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner" id="myHome">
+            <div class="carousel-item active">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Brooklyn Film Festival</h1>
+                    <h3>Augiust 5th to 8th @ Brooklyn Bridge Park</h3>
+                    <button onclick="location.href='#registrationForm';" type="button" class="btn btn-outline-light btn-lg">Register Here</button>
+                    <button onclick="location.href='#movieList';" type="button" class="btn btn-primary btn-lg">Movies</button>
+                </div>
+                <img class="imageSlider img-responsive" src="img/film-festival.png" />
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Brooklyn Film Festival</h1>
+                    <h3>Augiust 5th to 8th @ Brooklyn Bridge Park</h3>
+                    <button onclick="location.href='#registrationForm';" type="button" class="btn btn-outline-light btn-lg">Register Here</button>
+                    <button onclick="location.href='#movieList';" type="button" class="btn btn-primary btn-lg">Movies</button>
+                </div>
+                <img class="imageSlider img-responsive" src="img/fight5.png" />
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Brooklyn Film Festival</h1>
+                    <h3>Augiust 5th to 8th @ Brooklyn Bridge Park</h3>
+                    <button onclick="location.href='#registrationForm';" type="button" class="btn btn-outline-light btn-lg">Register Here</button>
+                    <button onclick="location.href='#movieList';" type="button" class="btn btn-primary btn-lg">Movies</button>
+                </div>
+                <img class="imageSlider img-responsive" src="img/about.png" />
+            </div>
+        </div>
+    </div>
+
+    <!--- Two Column Section -->
+
+    <div class="container-fluid" id="myAbout">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">About</h1>
+            </div>
+            <hr />
+            <div class="col-12">
+                <p class="lead">
+                    With 5,000 people, Brooklyn Outdoor Film Festival is going to show movies at Brooklyn Bridge Park this year, from August 5th through 8th, from 6pm to midnight!
+                </p>
+            </div>
+
+            <div class="col-12">
+                <img src="img/crowd.jpg" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <hr class="my-4" /> -->
+    <!--- Fixed background -->
+    
+    <div class="container-fluid">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Movies</h1>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+    <!--- Cards -->
+
+    <!-- <section class="movies" id="movies"> -->
+    <div class="container-fluid" id="movieList">
+        <div class="row welcome text-center">
+
+            <ul class="col-sm-12 nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#day1" role="tab" aria-selected="false">Day 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#day2" role="tab" aria-selected="false">Day 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#day3" role="tab" aria-selected="false">Day 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#day4" role="tab" aria-selected="false">Day 4</a>
+                </li>
+            </ul>
+
+            <div class="col-sm-12 col tab-content movie-list">
+                <div class="tab-pane fade show active" id="day1" role="tabpanel">
+                    <div class="container-fluid" id="connect">
+                        <div class="row padding">
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/boh.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Boheian Rhapsody <p>2018</p></h4>
+                                        <p class="card-text">
+                                            Bohemian Rhapsody is a foot-stomping celebration of Queen, their music and their extraordinary lead singer Freddie Mercury.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt1727824/" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/dun.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Dunkirk <p>2017</p></h4>
+                                        <p class="card-text">
+                                            Evacuation of Allied soldiers from the British Empire, and France, who were cut off and surrounded by the German Army</p>                         
+                                        <a target="_blank" href="https://www.imdb.com/title/tt5013056/" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/bat.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">The Dark KNight Rises <p>2012</p></h4>
+                                        <p class="card-text">
+                                                Despite his tarnished reputation after the events of The Dark Knight, in which he took the rap for Dent's crimes </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt1345836/" class="btn btn-outline-secondary">Details</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="day2" role="tabpanel">
+                    <div class="container-fluid" id="connect">
+                        <div class="row padding">
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/end.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Avengers Endgame<p>2019</p></h4>
+                                        <p class="card-text">
+                                            With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' actions and restore order to the universe.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt4154796/" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/avengers.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">The Avengers <p>2012</p></h4>
+                                        <p class="card-text">
+                                            Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt0848228/" class="btn btn-outline-secondary">Details</a>                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/dead.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Dead Poets Society<p>1989</p></h4>
+                                        <p class="card-text">
+                                            English teacher John Keating inspires his students to look at poetry with a different perspective of authentic knowledge and feelings.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt0097165/" class="btn btn-outline-secondary">Details</a>                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="day3" role="tabpanel">
+                    <div class="container-fluid" id="connect">
+                        <div class="row padding">
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/wonder.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Wonder Woman<p>2017</p></h4>
+                                        <p class="card-text">
+                                            When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt0451279/" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/iron.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Iron Man<p>2008</p></h4>
+                                        <p class="card-text">
+                                            After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.    
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt0371746/" class="btn btn-outline-secondary">Details</a>                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/rush.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rush<p>2013</p></h4>
+                                        <p class="card-text">
+                                            The merciless 1970s rivalry between Formula One rivals James Hunt and Niki Lauda.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt1979320/" class="btn btn-outline-secondary">Details</a>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="day4" role="tabpanel">
+                    <div class="container-fluid" id="connect">
+                        <div class="row padding">
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/cool.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Cool Hand Luke <p>1967</p></h4>
+                                        <p class="card-text">
+                                            A laid back Southern man is sentenced to two years in a rural prison, but refuses to conform.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt0061512/" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/wolverine.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">The Wolverine<p>2013</p></h4>
+                                        <p class="card-text">
+                                            Wolverine comes to Japan to meet an old friend whose life he saved years ago, and gets embroiled in a conspiracy involving yakuza and mutants.</p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt1430132/" class="btn btn-outline-secondary">Details</a>                          
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/iron3.png" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Iron Man 3<p>2013</p></h4>
+                                        <p class="card-text">
+                                            When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.
+                                        </p>
+                                        <a target="_blank" href="https://www.imdb.com/title/tt1300854/?ref_=nv_sr_1?ref_=nv_sr_1" class="btn btn-outline-secondary">Details</a>                          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </figure> -->
+<!-- </section> -->
+
+
+
+    
+    <!--- Welcome Section -->
+    <div class="container-fluid" id="myNews">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">News</h1>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <!--- Three Column Section -->
+    <div class="container-fluid">
+        <div class="row welcome padding">
+            
+            <div class="col-lg-4 col-sm-12 col-md-6">
+                <!-- <i class="fas fa-code"> </i> -->
+                <h3>Pre-Registration is open </h3>
+                <time>30 March, 2019</time>
+                <br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- <i class="fas fa-bold"> </i> -->
+                <h3>Newly Released Movies will be added</h3>
+                <time>30 March, 2019</time>
+                <br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Semper eget duis
+                    at tellus at urna condimentum. Feugiat scelerisque varius morbi enim. Tellus integer feugiat scelerisque varius morbi enim nunc. Scelerisque felis imperdiet proin fermentum leo. </p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- <i class="fas fa-css3"> </i> -->
+                <h3>Foreign Language Movies will be added</h3>
+                <time>30 March, 2019</time>
+                <br />
+                <p> Vel quam elementum pulvinar etiam non quam lacus. Massa tempor nec feugiat nisl pretium fusce. Blandit cursus risus at ultrices mi tempus. Consectetur libero id faucibus nisl tincidunt eget nullam. Ut tortor
+                    pretium viverra suspendisse potenti nullam. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Justo nec ultrices dui sapien eget. Ac odio tempor orci dapibus ultrices in iaculis nunc.</p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!--- Two Column Section -->
+
+    <!--- Connect -->
+    <div class="container-fluid" id="contactUs">
+        <div class="row text-center welcome">
+            <div class="col-12">
+                <h2>CONTACT US</h2>
+                <hr />
+            </div>
+            <div class="col-12 social padding">
+                <a href="hjttps://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+
+        <!-- Form -->
+
+        <div class="container">
+            <div class="row" id="registrationForm">
+                <!-- <div class="col-md-8 col-sm-0">
+                        <img src="img/type.jpg" />
+
+                </div> -->
+                <div class="col-md-6 mx-auto col-sm-12">
+                    <form class="card-img-form">
+                        <h3><b>Sign Up</b></h3>
+                        <br />
+                        <div class="form-group">
+                            <label for="Full Name">Full name</label>
+                            <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="Full Name">Email</label>
+                            <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Username</label>
+                            <input type="text" placeholder="Username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" placeholder="****" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Repat Password</label>
+                            <input type="password" placeholder="****" class="form-control">
+                        </div>
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- - Footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Important Links</h5>
+                        <hr class="light">
+                        <p><a href="#">Brooklyn News</a></p>
+                        <p><a href="#"">Brooklyn Bridge</a></p>
+                        <p>City, State, 0000</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Our hours</h5>
+                        <hr class="light">
+                        <P>Monday: 9am - 5pm</P>
+                        <p>Saturday: 10am - 4pm</p>
+                        <p>Sunday: CLosed</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Service area</h5>
+                        <hr class="light">
+                        <p>City, State, 0000</p>
+                        <p>City, State, 0000</p>
+                        <p>City, State, 0000</p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="light-100">
+                        <h5>&copy; Brooklyn Film Festival</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
