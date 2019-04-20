@@ -40,6 +40,11 @@ a {
     text-transform: uppercase;
     text-shadow: 1px 1px 15px #000;
 }
+.carousel-caption h2 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
 
 .carousel-caption h3 {
     font-size: 200%;
@@ -201,7 +206,9 @@ time {
     .carousel-caption h1 {
         font-size: 350%;
     }
-
+    .carousel-caption h2 {
+        font-size: 350%;
+    }
     .carousel-caption h3 {
         font-size: 140%;
         font-weight: 400;
@@ -215,6 +222,9 @@ time {
     .display-4 {
         font-size: 200%;
     }
+    /* .display-3 {
+        font-size: 100%;
+    } */
     .social a {
         font-size: 64px;
         padding: 32px;
@@ -232,6 +242,10 @@ time {
         font-size: 250%;
     }
 
+    .carousel-caption h2 {
+        font-size: 250%;
+    }
+
     .carousel-caption h3 {
         font-size: 120%;
         font-weight: 300;
@@ -243,6 +257,9 @@ time {
         top: 40%;
     }
     .carousel-caption h1 {
+        font-size: 150%;
+    }
+    .carousel-caption h2 {
         font-size: 150%;
     }
 
@@ -272,6 +289,9 @@ time {
 
 @media (max-width: 400px) {
     .carousel-caption h1 {
+        font-size: 110%;
+    }
+    .carousel-caption h2 {
         font-size: 110%;
     }
 
